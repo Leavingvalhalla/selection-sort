@@ -1,5 +1,18 @@
+# require 'pry'
+
 def selection_sort(arr)
-  # type your code in here
+  ans = []
+  arr.length.times do
+    lowest = arr[0]
+  arr.each do |num|
+    if num < lowest
+      lowest = num
+      end
+    end
+    ans << lowest
+    arr.delete(lowest)
+  end
+  ans
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -17,5 +30,5 @@ if __FILE__ == $PROGRAM_NAME
   100.times { long_input << rand }
 end
 
-# Please add your pseudocode to this file
-# And a written explanation of your solution
+Please add your pseudocode to this file
+And a written explanation of your solution
